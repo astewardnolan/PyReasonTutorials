@@ -1,0 +1,10 @@
+Time,Fixed-Point-Operation,Node,Label,Old Bound,New Bound,Occurred Due To,Clause-1,Clause-2,Clause-3,Clause-4
+0,0,person_0,customer,"[0.0,1.0]","[1.0,1.0]",customer_fact,,,,
+0,1,person_4,potential_customer,"[0.0,1.0]","[0.0,0.0]",potential_customer_rule,['person_0'],"[('person_4', 'person_0')]",,
+0,1,person_6,potential_customer,"[0.0,1.0]","[0.0,0.0]",potential_customer_rule,['person_0'],"[('person_6', 'person_0')]",,
+1,2,person_0,customer,"[0.0,1.0]","[1.0,1.0]",customer_fact,,,,
+1,2,person_2,customer,"[0.0,1.0]","[1.0,1.0]",customer_fact,,,,
+1,3,person_4,potential_customer,"[0.0,1.0]","[0.5,1.0]",potential_customer_rule,"['person_0', 'person_2']","[('person_4', 'person_0'), ('person_4', 'person_2')]",,
+1,3,person_6,potential_customer,"[0.0,1.0]","[0.0,0.0]",potential_customer_rule,"['person_0', 'person_2']","[('person_6', 'person_0')]",,
+1,3,person_0,potential_customer,"[0.0,1.0]","[0.0,0.0]",potential_customer_rule,"['person_0', 'person_2']","[('person_0', 'person_2')]",,
+1,4,person_4,target_customer,"[0.0,1.0]","[1.0,1.0]",target_customer_rule,['person_4'],"[('person_4', 'person_0')]","[('person_0', 'Pet_4')]","[('person_4', 'Pet_4')]"
